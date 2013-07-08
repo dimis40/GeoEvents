@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:id="@+id/context_menu" android:checkableBehavior="single">
+    <item
+        android:id="@+id/cnt_mnu_tap"
+        android:title="@string/str_cnt_mnu_tap"
+        />
+ 
+    <item
+        android:id="@+id/cnt_mnu_address"
+        android:title="@string/str_cnt_mnu_address"
+    />
+ 
+    <item
+        android:id="@+id/cnt_mnu_current"
+        android:title="@string/str_cnt_mnu_current"
+    />
+    </group>
+</menu>

@@ -1,0 +1,171 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.geoev"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+       />
+    <supports-screens
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:anyDensity="true" />
+    <application
+        android:icon="@drawable/myicon"
+        android:label="@string/app_name">
+        <!--  android:theme="@style/AppTheme"--> 
+        <uses-library android:name="com.google.android.maps"/>
+        <activity
+            android:name=".Geoevent"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden">
+            
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AllEvents"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FriendList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Attendees"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FbFeeds"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AllGps_test"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AttendeesList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AllEvents2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AllFriendsFreshed"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EventInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AllEventsFreshed"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Event_details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CreateEvent"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait" />
+          <activity
+            android:name=".LocateMe"
+            android:screenOrientation="portrait" />
+          <activity
+            android:name=".CustomWindow"
+            android:screenOrientation="portrait" />
+          <activity
+            android:name=".AllFriends"
+            android:screenOrientation="portrait" />
+          <activity
+            android:name=".BatteryMonitor"
+            android:screenOrientation="portrait" />
+          <activity android:name=".MapEvents" android:label="MapView">
+           <!--  <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>--> 
+        </activity>
+        <activity android:name=".GetCoordinatesOnMap" android:label="MapViewOnTap">
+        </activity>
+        <activity android:name=".GetLocationByTouch" android:label="MapViewOnTouch">
+        </activity>
+    <service
+      android:name=".FBPost">
+     
+      <intent-filter>
+        <action
+          android:name="com.example.geoev.FBPost" />
+      </intent-filter>
+    </service> 
+    <service
+      android:name=".BatteryService">
+     
+      <intent-filter>
+        <action
+          android:name="com.example.geoev.BatteryService" />
+      </intent-filter>
+    </service> 
+    <service
+      android:name=".GPSTracker">
+     
+      <intent-filter>
+        <action
+          android:name="com.example.geoev.GPSTracker" />
+      </intent-filter>
+    </service>  
+    
+    <service
+      android:name=".Opengraph">
+    </service>  
+    <service
+      android:name=".Testgraph">
+    </service>
+    
+    <service
+      android:name=".LocationService">
+     
+      <intent-filter>
+        <action
+          android:name="com.example.geoev.LocationService" />
+      </intent-filter>
+    </service>    
+    <service
+			android:name=".GpsBroadcast" >
+			<intent-filter>
+        <action
+          android:name="com.example.geoev.GpsBroadcast" />
+      </intent-filter>
+    </service>
+     <service
+			android:name=".FBService" >
+			<intent-filter>
+        <action
+          android:name="com.example.geoev.FBService" />
+      </intent-filter>
+    </service> 
+  
+     
+    <receiver android:name="GPSService" >
+            <intent-filter>
+                <action android:name="com.example.geoev.AllEvents.GPSService" />
+            </intent-filter>
+        </receiver> 
+       <receiver android:name="UpdateService" >
+            <intent-filter>
+                <action android:name="com.example.geoev.UpdateService" />
+            </intent-filter>
+        </receiver>        
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    
+    
+
+</manifest>

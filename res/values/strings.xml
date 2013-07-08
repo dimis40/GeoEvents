@@ -1,0 +1,42 @@
+<resources>
+
+    <string name="app_name">GeoEvents</string>
+    <string name="request">Request!</string>
+    <string name="hello">Hello World!</string>
+    <string name="upload">Upload Photo</string><string name="post">Wall Post!</string>
+    <string name="delete">Delete Post</string>
+    
+    <string name="create_event_title">Here you will create a Facebook event</string>
+    <string name="titleEvent">Title of the Event</string>
+    <string name="locationEvent">Location of the Event</string>
+    <string name="messageEvent">Message about the Event</string>
+    <string name="timeEvent">time</string>
+    <string name="dateEvent">date</string>
+    <string name="starttimeEvent">Start time set</string>
+    <string name="startdateEvent">Start date set</string>
+    <string name="endtimeEvent">End time set</string>
+    <string name="enddateEvent">End date set</string>
+    <string name="eventSender">Send Event</string>
+    <string name="checkTextLocation">check</string>
+     <string name="logout">log out</string>
+     <string name="typeaddress">Type Address: </string>
+     <string name="alertMessage">Alert </string>
+     <string name="session_no_valid_text">No valid session found, please login.</string>
+     <string name="profile_picture_description">The persons facebook profile picture</string>
+     
+     <string name="menu_title">Select Location input</string>
+     <string name="str_cnt_mnu_tap">Tap on the Map</string>
+    <string name="str_cnt_mnu_address">Enter an address</string>
+    <string name="str_cnt_mnu_current">Use your current Location</string>
+    <string name="pref_sync">Share your route</string>
+    <string name="pref_sync_summ">Map and share your route for a specific GeoEvent on Facebook through Open Graph</string>
+    <string name="inv_friends">Invite Friends</string>
+    <string name="invite_friends_summ">Invite all your friends automatically when create new GeoEvent</string>
+    <string name="invite">Invite</string>
+    <string name="distance_toevent">Distance to Event Location</string>
+    <string name="distance_event_summ">Set the distance from events location that informs you reached location</string>
+    <string name="invite">Invite</string>
+    <string name="START">Start Monitor</string>
+    <string name="BACKUP">Backup</string>
+
+</resources>

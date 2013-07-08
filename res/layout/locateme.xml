@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+>
+<TextView android:id="@+id/locateme_locationLabel"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content" 
+android:text="@string/typeaddress" />
+<EditText android:layout_width="39mm"  
+        android:layout_height="wrap_content" 
+        android:layout_weight="1" 
+        android:id="@+id/locateme_locationText">
+        <requestFocus></requestFocus>
+        </EditText>
+
+
+<Button
+android:text="Locate" 
+android:id="@+id/locateme_btnlocate" 
+android:layout_width="fill_parent"
+android:layout_height="wrap_content">
+</Button>
+</LinearLayout> 
+
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+>
+     <ListView android:layout_height="wrap_content" 
+     android:id="@+id/list" 
+     android:layout_weight="1" 
+     android:layout_width="fill_parent"></ListView>
+ 
+    
+</LinearLayout>
+
+<!--
+20110731, the google api key is a private key that XH obtained from Google. Please apply for a new apikey
+when you download this program. 
+
+ -->
+<!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:layout_width="fill_parent"-->
+<!--android:layout_height="45mm"-->
+<!-->-->
+<!--<com.google.android.maps.MapView-->
+<!--                 android:id="@+id/locateme_Map"-->
+<!--                 android:layout_width="fill_parent"-->
+<!--                 android:layout_height="fill_parent"-->
+<!--                 android:clickable="true"-->
+<!--                 android:apiKey=""-->
+<!--                 />-->
+<!--                 -->
+<!--                 </LinearLayout>-->
+
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+>
+   
+<TextView android:id="@+id/locateme_lbllocation"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content" 
+android:text="Current location:" 
+android:visibility="gone"
+/>
+<TextView android:id="@+id/locateme_txtlocation"
+android:layout_width="30mm"
+android:layout_height="wrap_content"
+android:visibility="gone" 
+/> 
+</LinearLayout>                 
+<!--
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+>
+    <CheckBox android:id="@+id/locateme_nogps"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Discard GPS location" />
+</LinearLayout>
+-->
+
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+>
+
+<Button
+android:text="OK" 
+android:id="@+id/locateme_btnlocationOK" 
+android:layout_width="fill_parent" 
+android:layout_height="wrap_content">
+</Button>
+<Button
+android:text="Cancel" 
+android:id="@+id/locateme_btnlocationCancel" 
+android:layout_width="fill_parent" 
+android:layout_height="wrap_content">
+</Button>
+</LinearLayout>    
+-->
+</LinearLayout>

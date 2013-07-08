@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content" android:orientation="vertical">
+  
+  	<TextView
+		android:text="@+id/attendee_entry_name"
+		android:id="@+id/attendee_entry_name" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:padding="10px"
+		android:textSize="16px"
+		android:textColor="#FFF" />
+</LinearLayout>

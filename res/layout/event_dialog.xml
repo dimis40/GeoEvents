@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content">
+       
+	<ImageView android:id="@+id/marker_place"
+		android:layout_width="120dip"
+		android:padding="5dip"
+		android:layout_height="120dip" 
+		android:layout_below="@+id/event_title"/>
+		
+	<TextView
+		android:id="@+id/event_info"
+		android:layout_width="wrap_content"
+		android:layout_below="@+id/marker_place" 
+		android:layout_height="wrap_content"
+		>
+	</TextView>
+
+  <TextView
+			android:paddingLeft="10px"
+			android:id="@+id/event_title"			
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content" 
+	        android:textSize="22dip"/>
+  <TextView
+		android:id="@+id/attendees_number"
+		android:layout_width="wrap_content"
+		android:layout_toRightOf="@+id/marker_place" 
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/event_title">
+	</TextView>
+	<TextView
+		android:id="@+id/attending_status"
+		android:layout_width="wrap_content"
+		android:layout_toRightOf="@+id/marker_place" 
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/attendees_number">
+	</TextView>
+	<TextView
+			android:id="@+id/event_start"			
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/marker_place"
+	        android:layout_below="@+id/attending_status" />
+		<TextView
+			android:id="@+id/event_end"			
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content" 
+	        android:layout_toRightOf="@+id/marker_place"
+	        android:layout_below="@+id/event_start"/>
+		
+		<TextView
+			android:id="@+id/event_location"			
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content" 
+	        android:layout_toRightOf="@+id/marker_place"
+	        android:layout_below="@+id/event_end"/>
+		<TextView
+			android:paddingLeft="10px"
+			android:id="@+id/event_description"			
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content" 
+	        android:layout_below="@+id/event_location"/>   
+	
+	
+	
+	
+	<RelativeLayout 
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content" 
+		android:id="@+id/linear_button_layout" 
+		android:layout_alignParentBottom="true"
+		>
+		<Button
+	    	android:id="@+id/delete_event"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:text="Delete event" 
+	        />
+	    
+	    <Button
+	    	android:id="@+id/get_directions"
+	    	android:layout_toRightOf="@id/delete_event"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Get Directions" 
+	        />
+
+		<Button
+		    android:id="@+id/join_event"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/delete_event"
+		    android:text="Join" />
+
+		<Button
+		    android:id="@+id/add_calendar"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/get_directions"
+		    android:layout_toRightOf="@+id/join_event"
+		    android:text="Add to Calendar" />
+
+		<Button 
+	    	android:id="@+id/invite_friends"
+	    	android:layout_toRightOf="@id/add_calendar"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/get_directions"
+	        android:text="Invite" />
+	        
+	</RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+    <TextView
+        android:layout_width="fill_parent" 
+        android:id="@+id/textFacebook" 
+        android:gravity="center_horizontal" 
+        android:layout_height="wrap_content" 
+        android:text="@string/create_event_title" 
+        android:layout_alignParentTop="true"
+   />
+    <EditText
+        android:id="@+id/editTextTitle" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:lines="1" android:textStyle="normal" 
+        android:layout_below="@+id/textFacebook" 
+        android:maxLength="50" 
+        android:text="@string/titleEvent"
+  />
+    <EditText
+        android:id="@+id/editTextLocation" 
+        android:layout_alignParentLeft="true"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:hint="Current Location" 
+        android:lines="1" 
+        android:textStyle="normal" 
+        android:layout_below="@+id/editTextTitle" 
+        android:layout_toLeftOf="@+id/checkLocation"
+        android:maxLength="150" 
+        android:text="@string/locationEvent"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:editable="false"
+ />
+    <EditText
+        android:id="@+id/editTextMessage" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:lines="1" 
+        android:textStyle="normal" 
+        android:layout_below="@+id/editTextLocation" 
+        android:maxLength="500" 
+        android:text="@string/messageEvent"
+/>
+    <TextView
+        android:id="@+id/timeStartDisplay" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="@string/timeEvent" 
+        android:layout_below="@+id/editTextMessage"
+/>
+    <TextView
+        android:id="@+id/dateStartDisplay" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="@string/dateEvent" 
+        android:layout_below="@+id/editTextMessage" 
+        android:layout_above="@+id/pickStartDate" 
+        android:layout_toRightOf="@+id/timeStartDisplay" 
+        android:layout_alignParentLeft="@+id/pickStartTime"
+/>
+   
+    <Button 
+        android:id="@+id/pickStartTime"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="@string/starttimeEvent" 
+        android:layout_below="@+id/timeStartDisplay"
+/>
+    <Button 
+        android:id="@+id/pickStartDate"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="@string/startdateEvent" 
+        android:layout_below="@+id/timeStartDisplay" 
+        android:layout_toRightOf="@+id/pickStartTime"
+/>
+    <TextView
+        android:id="@+id/timeEndDisplay" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="@string/timeEvent" 
+        android:layout_below="@+id/pickStartTime"
+/>
+    <TextView
+        android:id="@+id/dateEndDisplay" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="@string/dateEvent" 
+        android:layout_below="@+id/pickStartDate" 
+        android:layout_toRightOf="@+id/timeEndDisplay" 
+        android:layout_alignParentLeft="@+id/pickEndTime"
+/>
+    <Button 
+        android:id="@+id/pickEndTime"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="@string/endtimeEvent" 
+        android:layout_below="@+id/timeEndDisplay"
+/>
+    <Button 
+        android:id="@+id/pickEndDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:text="@string/enddateEvent" 
+        android:layout_below="@+id/timeEndDisplay" 
+        android:layout_toRightOf="@+id/pickEndTime"
+/>
+    <Button
+        android:text="@string/eventSender" 
+        android:id="@+id/buttonSender" 
+        android:layout_below="@+id/pickEndDate" 
+        android:layout_centerHorizontal="true" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="10dip"
+/>
+<ProgressBar 
+    android:id="@+id/progressLogin"
+    android:layout_below="@+id/buttonSender" 
+    android:layout_centerInParent="true" 
+    android:layout_width="wrap_content" 
+    android:visibility="gone" 
+    android:layout_height="wrap_content">
+ </ProgressBar>
+</RelativeLayout>

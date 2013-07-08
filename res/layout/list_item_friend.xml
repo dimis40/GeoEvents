@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" 
+    android:gravity="center_vertical" 
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    android:background="@android:color/transparent">
+
+    <ImageView
+        android:id="@+id/profile_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mr_unknown" 
+        android:contentDescription="@string/profile_picture_description"
+        android:layout_alignParentLeft="true"
+        android:paddingRight="3dp"/>
+
+    
+    <TextView
+        android:id="@+id/real_life_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/profile_picture"
+        android:layout_marginRight="36dp"
+        />
+     <CheckBox
+        android:id="@+id/chkfriend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_alignParentRight="true"
+        />
+    
+</RelativeLayout>

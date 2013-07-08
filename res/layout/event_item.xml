@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content" android:orientation="vertical">
+  
+  	<TextView
+		android:text="@+id/event_entry_name"
+		android:id="@+id/event_entry_name" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:padding="10px"
+		android:textSize="16px"
+		android:textColor="#FFF" />
+		
+	<TextView
+		android:text="@+id/event_entry_start_time"
+		android:id="@+id/event_entry_start_time" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:padding="10px"
+		android:textSize="10px"
+		android:textColor="#CCC" />
+		
+	<TextView
+		android:text="@+id/event_entry_end_time"
+		android:id="@+id/event_entry_end_time" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:padding="10px"
+		android:textSize="10px"
+		android:textColor="#CCC" />
+		
+	<TextView
+		android:text="@+id/event_entry_location"
+		android:id="@+id/event_entry_location" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:padding="10px"
+		android:textSize="10px"
+		android:textColor="#CCC" />
+</LinearLayout>
